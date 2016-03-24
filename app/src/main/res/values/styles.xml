@@ -6,6 +6,21 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
+
+    <style name="SiliconStem" parent="SiliconStem.Base">
+    </style>
+    <style name="SiliconStem.Base" parent="Theme.AppCompat.Light">
+    </style>
+
+
+
+    <style name="SiliconStem.Splash" parent ="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@drawable/splash1</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
 
 </resources>

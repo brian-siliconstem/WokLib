@@ -13,13 +13,13 @@ import android.widget.Toast;
 
 public class BaseActivity extends AppCompatActivity {
 
-    private boolean showToast=true;
-    private boolean logAll=true;
-    private boolean hideSoftKeys=true;
-    private boolean hideStatusBar=true;
-    private boolean hideActionBar=true;
-    private String logTag;
-    private String className;
+    protected boolean showToast=false;
+    protected boolean logAll=true;
+    protected boolean hideSoftKeys=true;
+    protected boolean hideStatusBar=true;
+    protected boolean hideActionBar=true;
+    protected String logTag;
+    protected String className;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
