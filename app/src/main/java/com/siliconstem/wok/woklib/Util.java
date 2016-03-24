@@ -8,7 +8,17 @@ public class Util {
     {
         //String[] parts=Thread.currentThread().getStackTrace()[3].getMethodName().split(".");
         //return parts[parts.length-1];
-        return Thread.currentThread().getStackTrace()[3].getMethodName();
+        return getMethodName(1);
+
+        //int depth=0;
+        //final StackTraceElement[] ste = Thread.currentThread().getStackTrace();
+        //return ste[ste.length - 1 - depth].getMethodName();
+    }
+    public static String getMethodName(int d)
+    {
+        //String[] parts=Thread.currentThread().getStackTrace()[3].getMethodName().split(".");
+        //return parts[parts.length-1];
+        return Thread.currentThread().getStackTrace()[3+d].getMethodName();
 
         //int depth=0;
         //final StackTraceElement[] ste = Thread.currentThread().getStackTrace();
