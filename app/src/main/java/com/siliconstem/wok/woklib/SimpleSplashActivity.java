@@ -27,7 +27,7 @@ public class SimpleSplashActivity extends BaseActivity {
     private int splashAfterFadeInMiliseconds=2000;
     private int splashAfterFadeOutMiliseconds=2000;
     private int splashFadeInMiliseconds=3000;
-    private int splashFadeOutMiliseconds=2000;
+    private int splashFadeOutMiliseconds=1000;
     private int splashEndBufferMiliseconds=1000;
     ImageView splashImageView;
 
@@ -74,7 +74,7 @@ public class SimpleSplashActivity extends BaseActivity {
 
         splashImageView.startAnimation(animation);
         LinearLayout linearLayout=(LinearLayout)findViewById(R.id.splashImageLinearLayout);
-        splashImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        //splashImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         linearLayout.addView(splashImageView);
         Thread timerThread = new Thread(){
             public void run(){
